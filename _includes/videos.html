@@ -1,0 +1,60 @@
+<div class="my-5">
+  <div class="videos-container">
+    <div class="video-info">
+      <h2><span>Hear</span> from our <span>NEET Aspirants</span></h2>
+    </div>
+
+    <div id="video-slider" class="video-slider">
+      {% for item in site.data.videos %}
+      <div>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/{{item.id}}"
+          srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/{{item.id}}?autoplay=1><img src=https://img.youtube.com/vi/{{item.id}}/hqdefault.jpg alt='Why Neet Advisor?'><span>▶</span></a>"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+      {% endfor %}
+    </div>
+    <div></div>
+    <div class="slide-navs">
+      <div id="prev">
+        <svg
+          width="40"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </div>
+      <div id="next">
+        <svg
+          width="40"
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,152 @@
+<div
+  data-delay="0"
+  data-vc-full-width="true"
+  data-vc-full-width-init="false"
+  class="vc_row wpb_row vc_row-fluid dt-sc-skin-highlight dt-sc-curvy-top dt-sc-animated-interaction showsections"
+>
+  <div
+    class="py-md-5 wpb_column vc_column_container vc_col-sm-12 vc_hidden-md vc_hidden-sm vc_hidden-xs"
+    data-delay="0"
+  >
+    <div class="vc_column-inner">
+      <div class="wpb_wrapper">
+        <div class="dt-sc-empty-space"></div>
+        <div class="vc_row wpb_row vc_inner vc_row-fluid">
+          <div class="wpb_column vc_column_container vc_col-sm-2 vc_col-lg-3">
+            <div class="vc_column-inner">
+              <div class="wpb_wrapper"></div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-6">
+            <div class="vc_column-inner">
+              <div class="wpb_wrapper">
+                <div
+                  class="pb-md-4 dt-sc-title with-right-border-decor without-bottom-space aligncenter"
+                  data-delay="0"
+                >
+                  <h2>Our Achievements</h2>
+                  <p></p>
+                </div>
+                <div class="dt-sc-empty-space"></div>
+                <div class="wpb_text_column wpb_content_element">
+                  <div class="wpb_wrapper">
+                    <div class="row d-flex justify-content-center">
+                      <div class="column">
+                        <img
+                          style="width: 32px; height: 32px"
+                          src="/assets/images/star-black-fivepointed-shape-1.png"
+                          alt="NEET 2024 and counselling advisor achievements high rated star"
+                          title="leopride neet and egineering counselling advisor achievements star"
+                        />
+                      </div>
+                      <div class="column">
+                        <img
+                          style="width: 32px; height: 32px"
+                          src="/assets/images/star-black-fivepointed-shape-1.png"
+                          alt="NEET 2024 and counselling advisor achievements high rated star"
+                          title="leopride neet and egineering counselling advisor achievements star"
+                        />
+                      </div>
+                      <div class="column">
+                        <img
+                          style="width: 32px; height: 32px"
+                          src="/assets/images/star-black-fivepointed-shape-1.png"
+                          alt="NEET 2024 and counselling advisor achievements high rated star"
+                          title="leopride neet and egineering counselling advisor achievements star"
+                        />
+                      </div>
+                      <div class="column">
+                        <img
+                          style="width: 32px; height: 32px"
+                          src="/assets/images/star-black-fivepointed-shape-1.png"
+                          alt="NEET 2024 and counselling advisor achievements high rated star"
+                          title="leopride neet and egineering counselling advisor achievements star"
+                        />
+                      </div>
+                      <div class="column">
+                        <img
+                          style="width: 32px; height: 32px"
+                          src="/assets/images/star-black-fivepointed-shape-1.png"
+                          alt="NEET 2024 and counselling advisor achievements high rated star"
+                          title="leopride neet and egineering counselling advisor achievements star"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dt-sc-empty-space"></div>
+                <div>
+                  <h4 class="aligncenter class5" data-delay="0">One of the Highest Rated Counselling Services</h4>
+                </div>
+                <div class="dt-sc-empty-space pb-5"></div>
+                <div
+                  class="dt-sc-title with-right-border-decor without-main-title aligncenter class3"
+                  data-delay="0"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="wpb_column vc_column_container vc_col-sm-2 vc_col-lg-3">
+            <div class="vc_column-inner">
+              <div class="wpb_wrapper"></div>
+            </div>
+          </div>
+        </div>
+        <div class="dt-sc-empty-space"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vc_row-full-width vc_clearfix"></div>
+
+<div data-delay="0" class="vc_row wpb_row vc_row-fluid showsections">
+  <div
+    class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-md vc_hidden-sm vc_hidden-xs"
+    data-delay="0"
+  >
+    <div class="vc_column-inner">
+      <div class="wpb_wrapper">
+        <div
+          class="vc_row wpb_row vc_inner vc_row-fluid dt-sc-column-overflow-top"
+        >
+          {% for item in site.data.counter %}
+            <div class="wpb_column vc_column_container vc_col-sm-4">
+              <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                  <div
+                    class="dt-sc-counter type1 aligncenter custom-style"
+                    data-delay="0"
+                  >
+                    <div class="dt-sc-couter-icon-holder">
+                      <div class="icon-wrapper">
+                        <span>
+                          <img
+                            width="100"
+                            height="100"
+                            alt="NEET 2024 students"
+                            src="{{item.image}}"
+                            class="attachment-full"
+                          />
+                        </span>
+                      </div>
+                      <div
+                        class="dt-sc-counter-number"
+                        data-value="{{item.count}}"
+                        data-append="+"
+                      >
+                        {{item.count}}
+                      </div>
+                    </div>
+                    <h4>{{item.text}}</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div data-delay="0" class="vc_row wpb_row vc_row-fluid"></div>

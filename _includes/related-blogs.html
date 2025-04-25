@@ -1,0 +1,23 @@
+<section class="px-3 px-md-0 pb-3 py-3 py-md-5">
+  <h4>Recent Posts</h4>
+  <div class="blog-index-related blog-index-related">
+    {% for post in site.related_posts limit: 3 %}
+    <a title="NEET counselling {{site.data.keywords.neet-year}} blog" class="nostyle" href="{{post.url}}">
+      <div class="blog-card-small">
+        <div class="blog-image-container">
+          <!-- <div
+            class="blog-image"
+            style="background-image: url({{post.image}});"
+          ></div> -->
+          <img src="{{post.thumbimage}}" loading="lazy" alt="{{post.title}}">
+        </div>
+        <div class="blog-card-content py-2 px-3" style="background: #FCD21C;">
+          <div class="blog-title py-0 my-0">
+            <strong style="color: black;">{{post.title | truncate: 30}}</strong>
+          </div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
